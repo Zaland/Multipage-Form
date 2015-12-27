@@ -14,3 +14,10 @@ legend {
     float:none;
 }
 
+fieldset {
+	display: none;
+}
+
+#first {
+	display: block;
+}
