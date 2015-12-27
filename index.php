@@ -50,31 +50,31 @@
 						<fieldset id="account-info">
 							<legend> Account Information </legend>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="firstname"> First Name </label>
+								<label class="col-lg-2 control-label" for="firstname"> First Name <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter First Name">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="lastname"> Last Name </label>
+								<label class="col-lg-2 control-label" for="lastname"> Last Name <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="lastname" id="lastname" placeholder="Enter Last Name">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="email"> Email </label>
+								<label class="col-lg-2 control-label" for="email"> Email <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="email" id="email" placeholder="Enter Email">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="password"> Password </label>
+								<label class="col-lg-2 control-label" for="password"> Password <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="password" id="password" placeholder="Enter Password">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="password2"> Confirm Password </label>
+								<label class="col-lg-2 control-label" for="password2"> Confirm Password <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="password2" id="password2" placeholder="Enter Password Again">
 								</div>
@@ -88,25 +88,31 @@
 						<fieldset id="billing-info">
 							<legend> Billing Information </legend>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="address"> Street Address </label>
+								<label class="col-lg-2 control-label" for="address"> Street Address <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="address" id="address" placeholder="Enter Street Address">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="city"> City </label>
+								<label class="col-lg-2 control-label" for="address2"> Street Address 2 </label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" name="address2" id="address2" placeholder="Enter Street Address">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="city"> City <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="city" id="city" placeholder="Enter City">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="province"> Province </label>
+								<label class="col-lg-2 control-label" for="province"> Province <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="province" id="province" placeholder="Enter Province">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="postal_code"> Postal Code </label>
+								<label class="col-lg-2 control-label" for="postal_code"> Postal Code <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="postal_code" id="postal_code" placeholder="Enter Postal Code">
 								</div>
@@ -123,27 +129,33 @@
 						<fieldset id="emergency-info">
 							<legend> Emergency Contact Information </legend>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="e_firstname"> First Name </label>
+								<label class="col-lg-2 control-label" for="e_firstname"> First Name <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="e_firstname" id="e_firstname" placeholder="Enter First Name">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="e_lastname"> Last Name </label>
+								<label class="col-lg-2 control-label" for="e_lastname"> Last Name <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="e_lastname" id="e_lastname" placeholder="Enter Last Name">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="e_email"> Email </label>
+								<label class="col-lg-2 control-label" for="e_email"> Email <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="e_email" id="e_email" placeholder="Enter Email">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="e_phone"> Phone Number </label>
+								<label class="col-lg-2 control-label" for="e_phone"> Phone Number <span class="form-required">*</span> </label>
 								<div class="col-lg-10">
 									<input type="text" class="form-control" name="e_phone" id="e_phone" placeholder="Enter Phone Number">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="e_relationship"> Relationship <span class="form-required">*</span> </label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" name="e_relationship" id="e_relationship" placeholder="Enter Relationship">
 								</div>
 							</div>
 							<div class="form-group">
@@ -151,7 +163,7 @@
 									<button type="button" class="btn btn-default btn-block previous"> Previous </button>
 								</div>
 								<div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
-									<button type="button" class="btn btn-primary btn-block"> Register </button>
+									<button type="submit" class="btn btn-primary btn-block register"> Register </button>
 								</div>
 							</div>
 						</fieldset>

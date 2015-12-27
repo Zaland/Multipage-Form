@@ -21,3 +21,7 @@ fieldset {
 #account-info {
 	display: block;
 }
+
+.form-required {
+  	color: red;
+}

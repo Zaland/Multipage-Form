@@ -6,16 +6,12 @@ $(document).ready(function() {
     	form.validate( {
 	        rules: {
 	            firstname: {
-	                minlength: 1,
-	                maxlength: 15,
-	                lettersonly: true,
-	                required: true
+	            	required: true,
+	                lettersonly: true
 	            },
 	            lastname: {
-	                minlength: 1,
-	                maxlength: 15,
-	                lettersonly: true,
-	                required: true
+	            	required: true,
+	                lettersonly: true
 	            },
 	            email: {
 	            	email: true,
@@ -27,6 +23,40 @@ $(document).ready(function() {
 	            password2: {
 	            	required: true,
 	            	equalTo: '#password'
+	            },
+	            address: {
+	            	required: true
+	            },
+	            city: {
+	            	required: true,
+	            	lettersonly: true
+	            },
+	            province: {
+	            	required: true,
+	            	lettersonly: true
+	            },
+	            postal_code: {
+	            	required: true,
+	            },
+	            e_firstname: {
+	            	required: true,
+	                lettersonly: true
+	            },
+	            e_lastname: {
+	            	required: true,
+	                lettersonly: true
+	            },
+	            e_email: {
+	            	email: true,
+	            	required: true
+	            },
+	            e_phone: {
+	            	required: true,
+	            	phoneUS: true
+	            },
+	            e_relationship: {
+	            	required: true,
+	            	lettersonly: true
 	            }
 	        },
 	        messages: {
@@ -41,6 +71,10 @@ $(document).ready(function() {
 	        },
 	        errorElement: 'span',
 	        errorClass: 'help-block',
+	        submitHandler: function(form) {
+	        	if(form.valid())
+	        		console.log('works');
+	        }
 	    });
 
     	// if the form is validated, then proceed to the next part of the form
