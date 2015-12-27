@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title> Magic Form </title>
+		<title> Multipage-Form </title>
 		
 		<!-- Bootstrap core CSS -->
 		<link href="css/sandstone-bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 			<!-- Navbar -->
 			<nav class="navbar navbar-default">
 				<div class="container-fluid nav-inner">
-					<a class="navbar-brand nav-center"> Magic Form </a>	
+					<a class="navbar-brand nav-center"> Multipage-Form </a>	
 				</div>
 			</nav>
 
@@ -44,8 +44,10 @@
 					  	<div class="progress-bar progress-bar-info hidden" id="progress-billing" style="width:33.33%"> Billing Address</div>
 					  	<div class="progress-bar progress-bar-success hidden" id="progress-emergency" style="width:33.33%"> Emergency Contact </div>
 					</div>
+
+					<!-- Form -->
 					<form class="form-horizontal" id="register-form">
-						<fieldset id="first">
+						<fieldset id="account-info">
 							<legend> Account Information </legend>
 							<div class="form-group">
 								<label class="col-lg-2 control-label" for="firstname"> First Name </label>
@@ -66,9 +68,15 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-lg-2 control-label" for="email2"> Confirm Email </label>
+								<label class="col-lg-2 control-label" for="password"> Password </label>
 								<div class="col-lg-10">
-									<input type="text" class="form-control" name="email2" id="email2" placeholder="Enter Email">
+									<input type="text" class="form-control" name="password" id="password" placeholder="Enter Password">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="password2"> Confirm Password </label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" name="password2" id="password2" placeholder="Enter Password Again">
 								</div>
 							</div>
 							<div class="form-group">
@@ -77,7 +85,7 @@
 								</div>
 							</div>
 						</fieldset>	
-						<fieldset>
+						<fieldset id="billing-info">
 							<legend> Billing Information </legend>
 							<div class="form-group">
 								<label class="col-lg-2 control-label" for="address"> Street Address </label>
@@ -112,7 +120,7 @@
 								</div>
 							</div>
 						</fieldset>
-						<fieldset>
+						<fieldset id="emergency-info">
 							<legend> Emergency Contact Information </legend>
 							<div class="form-group">
 								<label class="col-lg-2 control-label" for="e_firstname"> First Name </label>
