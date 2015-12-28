@@ -72,9 +72,12 @@ $(document).ready(function() {
 	        errorElement: 'span',
 	        errorClass: 'help-block',
 	        submitHandler: function(form) {
-	        	if(form.valid())
-	        		console.log('works');
-	        }
+        		var a = '<div class="alert alert-success alert-dismissible" role="alert">' +
+        			'<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+        			'<span aria-hidden="true">&times;</span></button>' +
+        			'Successfully Registered! </div>'; 
+        		$('#alerts').html(a);
+	        },
 	    });
 
     	// if the form is validated, then proceed to the next part of the form

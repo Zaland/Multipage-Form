@@ -45,6 +45,9 @@
 					  	<div class="progress-bar progress-bar-success hidden" id="progress-emergency" style="width:33.33%"> Emergency Contact </div>
 					</div>
 
+					<!-- Alerts are shown here -->
+					<div id="alerts"></div>
+
 					<!-- Form -->
 					<form class="form-horizontal" id="register-form">
 						<fieldset id="account-info">
